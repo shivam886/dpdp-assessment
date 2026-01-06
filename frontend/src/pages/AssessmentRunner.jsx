@@ -54,7 +54,7 @@ export default function AssessmentRunner() {
             {/* Enterprise Header */}
             <div className="bg-white border-b border-slate-200 px-8 py-4 sticky top-0 z-20 shadow-sm flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                    <img src="/logo.png" alt="Athenian Tech" className="h-10 w-auto invert" />
+                    <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Athenian Tech" className="h-10 w-auto invert" />
                     <span className="hidden md:inline-block text-slate-500 text-sm font-medium">DPDP Assessment Suite</span>
                 </div>
             </div>
