@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import AuthLayout from './components/Layout/AuthLayout';
 import Login from './pages/Login';
@@ -23,7 +23,7 @@ const ProtectedRoute = ({ children, requiredRole }) => {
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           {/* Public Routes */}
           <Route element={<AuthLayout />}>
@@ -65,7 +65,7 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   );
 }
