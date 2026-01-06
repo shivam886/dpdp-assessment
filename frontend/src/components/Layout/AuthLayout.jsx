@@ -20,7 +20,7 @@ export default function AuthLayout() {
 
                 <div className="relative z-10 p-12 flex flex-col justify-between h-full text-white">
                     <div className="flex items-center justify-center w-full">
-                        <img src="/logo.png" alt="Athenian Tech" className="h-24 w-auto drop-shadow-lg" />
+                        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Athenian Tech" className="h-24 w-auto drop-shadow-lg" />
                     </div>
 
                     <div className="space-y-6 text-center">

@@ -57,7 +57,7 @@ export default function AdminDashboard() {
             {/* Top Navigation */}
             <nav className="bg-white border-b border-slate-200 px-8 py-4 flex justify-between items-center sticky top-0 z-10">
                 <div className="flex items-center gap-3">
-                    <img src="/logo.png" alt="Athenian Tech" className="h-10 w-auto p-1 bg-brand-900 rounded" />
+                    <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Athenian Tech" className="h-10 w-auto p-1 bg-brand-900 rounded" />
                     <span className="font-bold text-slate-800 text-lg">Athenian Tech Admin</span>
                 </div>
                 <div className="flex items-center gap-4">
